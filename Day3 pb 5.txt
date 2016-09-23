@@ -1,0 +1,24 @@
+import java.io.*;
+import java.lang.*;
+class Solution1
+{
+public void makeTags(String s1,String s2)
+{
+String s="<";
+
+StringBuilder sb = new StringBuilder(s);
+sb.append(s1).append(">").append(s2).append("</").append(s1).append(">");
+		
+System.out.println(sb.toString());
+}
+}
+
+
+class A
+{
+public static void main(String args[])
+{
+Solution1 ob=new Solution1();
+ob.makeTags("h1","HELLO");
+}
+}
